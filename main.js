@@ -77,7 +77,7 @@ var main=function main(){
         }
     });
     window.setInterval(()=>{
-        var boosted = booster?Math.pow(Math.log10(point+10),Math.log(point+1)*0.5+2):1;
+        var boosted = booster?Math.pow(Math.log10(point+10),Math.log(delta3+1)*0.5+2):1;
         if(gen){
             
             point+=0.05*delta*boosted;
