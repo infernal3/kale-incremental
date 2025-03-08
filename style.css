@@ -48,6 +48,7 @@ body{
     background:var(--bg-color);
 }
 button{
+    top:0%;
     user-select: none;
     -webkit-user-select: none;
     background: var(--button-color);
