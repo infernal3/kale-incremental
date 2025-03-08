@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>Kale Incremental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+</head>
+<body onload="main()">
+    <div id="app">
+        <div id="header">
+            <h1>Kale Incremental</h1>
+            <div id="p1"></div>
+            <div id="p2"></div>
+        </div><br>
+        <div id="loading">
+            <h1>Loading</h1>This shouldn't take more than 1 second...
+            <noscript class="bar">
+                <br>
+                Loading failed.<br>
+                JavaScript is required to access this site.
+            </noscript>
+        </div>
+        <div id="popup" style="display:none;">
+            <div id="buff-curse-desc" style="text-align:center">Choose a pair of Buff and Curse.</div>
+            <button class="buff" id="buff1" style="top:10%;"></button>
+            <button class="buff" id="buff2" style="top:40%;"></button>
+            <button class="buff" id="buff3" style="top:70%;"></button>
+            <button class="curse" id="curse1" style="top:10%;"></button>
+            <button class="curse" id="curse2" style="top:40%;"></button>
+            <button class="curse" id="curse3" style="top:70%;"></button>
+        </div>
+        <div id="content">
+            <div>
+                <div class="bar">
+                    How to play:<br>Click the buttons to gain Kale.<br>Reach the goal (indicated at the bottom) to complete.<br>Good luck!
+                </div>
+                <button id="c1">
+                    Click to gain +1 kale.
+                </button>
+                <button id="c2" style="display:none;">
+                    Click to complete!
+                </button>
+                <button id="c3" style="display:none;">
+                    Generator. Cost: 10
+                </button>
+                <button id="c4" style="display:none;">
+                    Upg Gen. Cost: 10
+                </button>
+                <button id="c5" style="display:none;">
+                    Upg Click. Cost: 100
+                </button>
+                <button id="c6" style="display:none;">
+                    Booster. Cost: 1000
+                </button>
+                <button id="c7" style="display:none;">
+                    Upg Boost. Cost: 10000
+                </button>
+            </div>
+        </div>
+        <div id="footer" class="bar">
+            Progress: 0%
+        </div>
+    </div>
+</body>
+</html>
