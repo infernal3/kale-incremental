@@ -2,6 +2,7 @@
     :root {
         --base-color: #ededed;
         --bg-color: #252525;
+        --button-color: #454545;
         --bar-color: #6a6a6a;
         --bar-color-2: #595959;
         --purchased: #34c400;
@@ -13,6 +14,7 @@
     :root {
         --base-color: #222222;
         --bg-color: #f4f4f4;
+        --button-color: #c0c0c0;
         --bar-color: #b4b4b4;
         --bar-color-2: #a3a3a3;
         --purchased: #008800;
@@ -33,7 +35,7 @@
 #footer.bar{
     position:absolute;
     bottom:0px;
-    height:30px;
+    height:1.5em;
 }
 *{
     font-family:"Tiny5",monospace;
@@ -46,8 +48,12 @@ body{
     background:var(--bg-color);
 }
 button{
+    top:0%;
+    user-select: none;
+    -webkit-user-select: none;
+    background: var(--button-color);
     width:175px;
-    height:30px;
+    height:2.5em;
 }
 #c2{
     background:var(--completion);
