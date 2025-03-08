@@ -15,7 +15,7 @@ var booster=false;
 var delta=1;
 var cost=10;
 var delta2=1;
-var delta3=2;
+var delta3=0;
 var cost2=100;
 var cost3=10000;
 var loading=true;
@@ -39,7 +39,7 @@ var main=function main(){
             cost=10;
             delta2=1;
             cost2=100;
-            delta3=2;
+            delta3=0;
             cost3=10000;
         }
     });
@@ -77,7 +77,7 @@ var main=function main(){
         }
     });
     window.setInterval(()=>{
-        var boosted = booster?Math.pow(Math.log10(point+10),delta3):1;
+        var boosted = booster?Math.pow(Math.log10(point+10),Math.log(point+1)*0.5+2):1;
         if(gen){
             
             point+=0.05*delta*boosted;
