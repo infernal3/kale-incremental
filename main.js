@@ -21,7 +21,7 @@ var cost3=10000;
 var loading=true;
 const goals=[20,75,400,1000,100000,10000000];
 var format=function format(E,t){
-    if(!(E typeof "number"))return "NaN";
+    if(!(typeof E== "number"))return "NaN";
     if(E<1000000)return E.toFixed(t);
     return E.toExponential(3).substr(0,5)"e"+E.toExponential(3).substr(7)
 }
