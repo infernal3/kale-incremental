@@ -83,19 +83,19 @@ var main=function main(){
             point+=0.05*delta*boosted;
             totalPoint+=0.05*delta*boosted;
         }
-        el('p1').textContent=`You have ${point.toFixed(2)} point${point==1?"":"s"}.`;
-        el('p2').textContent=gen?`You are gaining ${(delta*boosted).toFixed(3)} point${point==1?"":"s"} per second.`:"";
+        el('p1').textContent=`You have ${point.toFixed(2)} kale.`;
+        el('p2').textContent=gen?`You are gaining ${(delta*boosted).toFixed(3)} kale per second.`:"";
         var t=Math.min(100,totalPoint*100/goal);
-        el('c1').textContent=`Click to gain +${delta2} Points`;
+        el('c1').textContent=`Click to gain +${delta2} Kale`;
         el('c2').style=t==100?"":"display:none;";
         el('c3').style=stage>=1?(gen?"background:var(--purchased)":""):"display:none;";
-        el('c3').textContent=gen?`+${delta} Points/sec`:"Generator. Cost: 10";
+        el('c3').textContent=gen?`+${delta} Kale/sec`:"Generator. Cost: 10";
         el('c4').style=stage>=2?"":"display:none;";
         el('c4').textContent=`Upg Gen. Cost: ${cost}`;
         el('c5').style=stage>=3?"":"display:none;";
         el('c5').textContent=`Upg Click. Cost: ${cost2}`;
         el('c6').style=stage>=5?(booster?"background:var(--purchased)":""):"display:none;";
-        el('c6').textContent=booster?`x${boosted.toFixed(3)} Points gain`:`Booster. Cost: 1000`;
+        el('c6').textContent=booster?`x${boosted.toFixed(3)} Kale gain`:`Booster. Cost: 1000`;
         el('c7').style=stage>=6?(booster?"":"background:var(--negative)"):"display:none;";
         el('c7').textContent=`Upg Boost. Cost: ${cost3}`;
         el('footer').style=t>=100?"background:var(--completion);":`background:repeating-linear-gradient(to right,var(--purchased) 0% ${t}%,var(--bar-color-2) ${t}% 100%)`;
